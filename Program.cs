@@ -1,14 +1,15 @@
-﻿using ConsoleApp4;
-Student stu1 = new("Samid","Aghayev","P137",85);
-Console.WriteLine(stu1.FullName());
-Console.WriteLine(stu1.Info());
+﻿
+using ConsoleApp5.Models;
 
-if (stu1.IsGraduated() ==true)
-{
-    Console.WriteLine("Ikinci imtahana haqq qazandiniz.");
-}
-  else
-{
-    Console.WriteLine("Ikinci imtahana haqq qazanmadiniz.");
-}
-Console.WriteLine(stu1.IsGraduated());
+Group P137 = new Group(3);
+
+
+P137.AddStudent(new Student("Samid", "Aghayev"));
+P137.AddStudent(new Student("Rasul", "Chunayev"));
+P137.AddStudent(new Student("Elnur", "Mammadli"));
+P137.AddStudent(new Student("Hadji", "Aliyev"));
+
+
+
+
+Console.ReadLine();
